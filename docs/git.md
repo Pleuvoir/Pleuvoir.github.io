@@ -23,3 +23,10 @@ git remote add origin https://xxx.git
 ```
 
 在git创建项目时不要初始化任何内容，包括Readme 否则会有历史冲突。
+
+
+
+### 设置推送分支并推送
+
+```shell
+ git push --set-upstream origin master
