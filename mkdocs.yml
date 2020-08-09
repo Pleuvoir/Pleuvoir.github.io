@@ -1,0 +1,90 @@
+
+
+
+
+nav:
+- Home: index.md 
+- Bookmarks: bookmarks.md 
+- 操作系统: os.md
+- 网络: network.md
+- 数据结构和算法: 数据结构和算法.md 
+- Java: java.md
+- C++: cpp.md
+- Golang: golang.md
+- Python: python.md
+- Tags: tags.md 
+- About: about.md 
+
+
+theme:
+  name: material  # 安装pip install mkdocs mkdocs-material
+  favicon: images/favicon.ico
+  logo: images/logo.png
+  features:
+    - instant
+  language: 'zh'
+  palette:
+    primary: indigo
+  custom_dir: overrides
+  icon:
+    repo: fontawesome/brands/github-alt
+
+markdown_extensions:
+  - meta
+  - attr_list
+  - def_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - footnotes
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - toc:
+      permalink: true
+      toc_depth: 5
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+
+plugins:
+  - search
+  #- git-revision-date
+  #- git-revision-date-localized:
+     # type: date
+     # fallback_to_build_date: true
+
+extra:
+  social:
+    - icon: juejin/favicon
+      link: https://juejin.im/user/377887733065950
+      name: pleuvoir on juejin
+    - icon: fontawesome/brands/github
+      link: https://github.com/pleuvoir
+      name: pleuvoir on github
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:pleuvior@foxmail.com
+  extra_css:
+  - stylesheets/extra.css
+
+
+
+site_author: pleuvoir
+site_name: Comingback Docs
+repo_name: follow me on wiki sites
+repo_url: https://github.com/pleuvoir/wiki
+copyright: Copyright © 2020 pleuvoir. All rights reserved.
+
